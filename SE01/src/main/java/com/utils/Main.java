@@ -9,8 +9,8 @@ public class Main {
         String file2 = args[1];
         Map<String, List<Integer>> stringListMap = TokenizerUtil.CountWord(file1);
         Map<String, List<Integer>> stringListMap2 = TokenizerUtil.CountWord(file2);
-        Double aDouble = TokenizerUtil.CountCos(stringListMap, stringListMap2);
-        System.out.println(aDouble);
-        FileUtil.writeFile(args[2],String.valueOf(aDouble));
+        String sRsult= TokenizerUtil.CountCos(stringListMap, stringListMap2);
+        System.out.println(sRsult);
+        FileUtil.writeFile(args[2],String.valueOf(sRsult));
     }
 }

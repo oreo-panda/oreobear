@@ -54,7 +54,7 @@ public class TokenizerUtil {
     }
 
 
-    public static Double CountCos(Map<String, List<Integer>> map1,Map<String, List<Integer>> map2){
+    public static String CountCos(Map<String, List<Integer>> map1,Map<String, List<Integer>> map2){
         if(map1==null||map2==null){
             return null;
         }
@@ -96,7 +96,7 @@ public class TokenizerUtil {
             }
             count++;
         }
-        return sum/count;
+        return String.format("%.2f",sum/count);
 
     }
 
