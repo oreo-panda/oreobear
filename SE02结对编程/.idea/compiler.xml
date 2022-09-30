@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="结对编程" />
         <module name="SE02结队编程" />
+        <module name="SE02结对编程" />
       </profile>
     </annotationProcessing>
   </component>

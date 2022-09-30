@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-public class AlgoArithmetic {
+public class Generate {
     //题目数
     private static int NUMBER_PROBLEMS = 0;
     //生成值范围
@@ -16,7 +16,7 @@ public class AlgoArithmetic {
 
     private static String[] BRACKETS = {"(",")"};
 
-//     public AlgoArithmetic(int n, int r){
+//     public Generate(int n, int r){
 //         this.NUMBER_PROBLEMS = n;
 //         this.RANGEVALUE = r;
 //     }
@@ -132,7 +132,7 @@ public class AlgoArithmetic {
      */
 
     public static boolean end(String formula){
-        String re = new AlgoCalculate(formula).result;
+        String re = new Calculate(formula).result;
         if (re==null){
             re="0";
         }
